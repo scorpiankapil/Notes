@@ -4,39 +4,24 @@
     "type": "split",
     "children": [
       {
-        "id": "b40e589db4fcab4c",
+        "id": "d5d0e95c6b9346ef",
         "type": "tabs",
         "children": [
           {
-            "id": "211b5550fb225df3",
+            "id": "cac85e9c72fd53ba",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Advanced Web Exploitation/Advance Recon/3. Port Scanning.md",
+                "file": "Networking/1.Basic Network Concepts/1.8 Access Methods.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "3. Port Scanning"
-            }
-          },
-          {
-            "id": "c5ed05f87d0f1a72",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Advanced Web Exploitation/Advance Recon/4. Content Discovery.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "4. Content Discovery"
+              "title": "1.8 Access Methods"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -93,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 353.5
   },
   "right": {
     "id": "b698854d9e69046c",
@@ -109,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Web Security - Rana Khalil/SQL Injection/SQL Injection.md",
+                "file": "Advanced Web Exploitation/Advance Recon/4. Content Discovery.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -119,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for SQL Injection"
+              "title": "Backlinks for 4. Content Discovery"
             }
           },
           {
@@ -171,20 +156,31 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Web Security - Rana Khalil/SQL Injection/SQL Injection.md",
+                "file": "Advanced Web Exploitation/Advance Recon/4. Content Discovery.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of SQL Injection"
+              "title": "Outline of 4. Content Discovery"
+            }
+          },
+          {
+            "id": "f801d0feed174f5b",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {},
+              "icon": "calendar-with-checkmark",
+              "title": "Calendar"
             }
           }
-        ]
+        ],
+        "currentTab": 5
       }
     ],
     "direction": "horizontal",
-    "width": 300,
+    "width": 200,
     "collapsed": true
   },
   "left-ribbon": {
@@ -198,19 +194,32 @@
       "bases:Create new base": false
     }
   },
-  "active": "c5ed05f87d0f1a72",
+  "active": "cac85e9c72fd53ba",
   "lastOpenFiles": [
+    "Networking/1.Basic Network Concepts/1.7 Network Media and Connectors.md",
+    "Networking/1.Basic Network Concepts/1.6 Network Topologies.md",
+    "Networking/1.Basic Network Concepts/1.5 Internet, Intranet, and Extranet.md",
+    "Networking/1.Basic Network Concepts/1.4 Types of Networks.md",
+    "Networking/1.Basic Network Concepts/1.3 Wans, Lans, and Mans.md",
+    "Networking/1.Basic Network Concepts/1.2 Servers, Workstations, and Hosts.md",
+    "Networking/1.Basic Network Concepts/1.1 Identifying Characteristics of a network.md",
+    "Networking/1.Basic Network Concepts/1.8 Access Methods.md",
     "Advanced Web Exploitation/Advance Recon/3. Port Scanning.md",
+    "Networking/1.Basic Network Concepts/1.12.md",
+    "Untitled.md",
+    "Networking/1.Basic Network Concepts/1.1 Identifying Characteristics of a Network",
+    "Networking/1.Basic Network Concepts",
+    "Networking",
+    "Advanced Web Exploitation/Advance Recon/1. Basics.md",
     "Advanced Web Exploitation/Advance Recon/4. Content Discovery.md",
-    "Web Security - Rana Khalil/SQL Injection/SQL Injection.md",
+    "Kali Linux Capsule/Day 1 - Kali Linux.md",
     "Advanced Web Exploitation/Advance Recon/2. Subdomain Enumeration.md",
     "DCAPT 2025/DAY 2 -DCAPT.md",
+    "DCAPT 2025/DAY 1 - DCAPT.md",
+    "Web Security - Rana Khalil/SQL Injection/SQL Injection.md",
     "Kali Linux Capsule/Day 4 - Kali Linux.md",
     "Kali Linux Capsule/Day 5 - Kali Linux.md",
-    "Kali Linux Capsule/Day 1 - Kali Linux.md",
     "OverTheWire/Bandit/Bandit - OverTheWire.md",
-    "DCAPT 2025/DAY 1 - DCAPT.md",
-    "Advanced Web Exploitation/Advance Recon/1. Basics.md",
     "Advanced Web Exploitation/Advance Recon",
     "Advanced Web Exploitation",
     "Kali Linux Capsule/Day 3 - Kali Linux.md",
@@ -221,12 +230,7 @@
     "Web Security - Rana Khalil/SQL Injection/SQL Injection Lab-1.md",
     "OverTheWire/Bandit",
     "OverTheWire",
-    "SOC Analyst L1/Day 1 - SOC.md",
     "SOC Analyst L1",
-    "Kali Linux Capsule/Day 2",
-    "Kali Linux Capsule/Day 1",
-    "Kali Linux Capsule",
-    "Welcome.md",
-    "Web Security - Rana Khalil/SQL Injection"
+    "Kali Linux Capsule/Day 2"
   ]
 }
