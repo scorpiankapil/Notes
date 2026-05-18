@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Networking/1.Basic Network Concepts/1.8 Access Methods.md",
+                "file": "Networking/1.Basic Network Concepts/1.9 Network Architectures.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "1.8 Access Methods"
+              "title": "1.9 Network Architectures"
             }
           }
         ]
@@ -194,8 +194,10 @@
       "bases:Create new base": false
     }
   },
-  "active": "cac85e9c72fd53ba",
+  "active": "c874b408db857c1d",
   "lastOpenFiles": [
+    "Networking/1.Basic Network Concepts/1.8 Access Methods.md",
+    "Networking/1.Basic Network Concepts/1.9 Network Architectures.md",
     "Networking/1.Basic Network Concepts/1.7 Network Media and Connectors.md",
     "Networking/1.Basic Network Concepts/1.6 Network Topologies.md",
     "Networking/1.Basic Network Concepts/1.5 Internet, Intranet, and Extranet.md",
@@ -203,7 +205,6 @@
     "Networking/1.Basic Network Concepts/1.3 Wans, Lans, and Mans.md",
     "Networking/1.Basic Network Concepts/1.2 Servers, Workstations, and Hosts.md",
     "Networking/1.Basic Network Concepts/1.1 Identifying Characteristics of a network.md",
-    "Networking/1.Basic Network Concepts/1.8 Access Methods.md",
     "Advanced Web Exploitation/Advance Recon/3. Port Scanning.md",
     "Networking/1.Basic Network Concepts/1.12.md",
     "Untitled.md",
@@ -227,7 +228,6 @@
     "Web Security - Rana Khalil/SQL Injection/SQL Injection Lab-2.md",
     "DCAPT 2025",
     "SOC Analyst L1/Day 2 - SOC.md",
-    "Web Security - Rana Khalil/SQL Injection/SQL Injection Lab-1.md",
     "OverTheWire/Bandit",
     "OverTheWire",
     "SOC Analyst L1",
