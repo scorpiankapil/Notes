@@ -65,11 +65,11 @@ The difference confirms SQL injection.
 Time-Based Blind SQL Injection is a type of Blind SQL Injection where the attacker does not see any data or error messages.
 Instead, the attacker checks the time delay in the website’s response to guess information.
 Example-
-- The website does **not show any data or error messages**, so nothing is visible to the attacker.
-- The attacker injects a SQL query containing a **time delay function** like `SLEEP(5)`.
-- If the injected condition is **TRUE**, the database pauses for a few seconds.
-- The webpage **loads slowly**, which tells the attacker the condition is true.
-- By repeating this process, the attacker extracts database information **step by step using time delays**.
+- The website does not show any data or error messages, so nothing is visible to the attacker.
+- The attacker injects a SQL query containing a time delay function like `SLEEP(5)`.
+- If the injected condition is TRUE, the database pauses for a few seconds.
+- The webpage loads slowly, which tells the attacker the condition is true.
+- By repeating this process, the attacker extracts database information step by step using time delays.
 
 ##### 3.Out-of-Band (OAST) SQL Injection
 Out-of-Band (OAST) SQL Injection is a type of SQL injection where the attacker cannot get data through normal page responses or time delays.

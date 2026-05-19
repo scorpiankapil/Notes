@@ -1,4 +1,4 @@
-# Lab #1 - SQL injection vulnerability in WHERE clause allowing retrieval of hidden data
+# Lab 1 - SQL injection vulnerability in WHERE clause allowing retrieval of hidden data
 
 **LAB -** https://portswigger.net/web-security/sql-injection/lab-retrieve-hidden-data
 
