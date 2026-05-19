@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Networking/1.Basic Network Concepts/1.9 Network Architectures.md",
+                "file": "DCAPT 2025/DCAPT (Theory).md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "1.9 Network Architectures"
+              "title": "DCAPT (Theory)"
             }
           }
         ]
@@ -194,11 +194,17 @@
       "bases:Create new base": false
     }
   },
-  "active": "c874b408db857c1d",
+  "active": "cac85e9c72fd53ba",
   "lastOpenFiles": [
-    "Networking/1.Basic Network Concepts/1.8 Access Methods.md",
+    "DCAPT 2025/DCAPT (Practical).md",
+    "DCAPT 2025/DCAPT (Theory).md",
     "Networking/1.Basic Network Concepts/1.9 Network Architectures.md",
+    "Networking/1.Basic Network Concepts/1.10 Token Ring.md",
+    "Networking/1.Basic Network Concepts/1.11 FDDI.md",
+    "Networking/1.Basic Network Concepts/1.12 Network Operating System.md",
+    "OverTheWire/Bandit/Bandit - OverTheWire.md",
     "Networking/1.Basic Network Concepts/1.7 Network Media and Connectors.md",
+    "Networking/1.Basic Network Concepts/1.8 Access Methods.md",
     "Networking/1.Basic Network Concepts/1.6 Network Topologies.md",
     "Networking/1.Basic Network Concepts/1.5 Internet, Intranet, and Extranet.md",
     "Networking/1.Basic Network Concepts/1.4 Types of Networks.md",
@@ -215,19 +221,13 @@
     "Advanced Web Exploitation/Advance Recon/4. Content Discovery.md",
     "Kali Linux Capsule/Day 1 - Kali Linux.md",
     "Advanced Web Exploitation/Advance Recon/2. Subdomain Enumeration.md",
-    "DCAPT 2025/DAY 2 -DCAPT.md",
-    "DCAPT 2025/DAY 1 - DCAPT.md",
     "Web Security - Rana Khalil/SQL Injection/SQL Injection.md",
     "Kali Linux Capsule/Day 4 - Kali Linux.md",
     "Kali Linux Capsule/Day 5 - Kali Linux.md",
-    "OverTheWire/Bandit/Bandit - OverTheWire.md",
     "Advanced Web Exploitation/Advance Recon",
     "Advanced Web Exploitation",
     "Kali Linux Capsule/Day 3 - Kali Linux.md",
-    "Kali Linux Capsule/Day 2 - Kali Linux.md",
-    "Web Security - Rana Khalil/SQL Injection/SQL Injection Lab-2.md",
     "DCAPT 2025",
-    "SOC Analyst L1/Day 2 - SOC.md",
     "OverTheWire/Bandit",
     "OverTheWire",
     "SOC Analyst L1",
