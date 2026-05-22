@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DCAPT 2025/DCAPT (Theory).md",
+                "file": "Networking/2. Network Protocols and Standards/2.7 TCP-IP Protocol.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "DCAPT (Theory)"
+              "title": "2.7 TCP-IP Protocol"
             }
           }
         ]
@@ -196,41 +196,41 @@
   },
   "active": "2e2067a4dfd2f442",
   "lastOpenFiles": [
+    "Networking/2. Network Protocols and Standards/2.6 AppleTalk.md",
+    "Networking/2. Network Protocols and Standards/2.7 TCP-IP Protocol.md",
+    "Networking/2. Network Protocols and Standards/2.5 IPX&SPX.md",
+    "Networking/2. Network Protocols and Standards/2.4 NetBIOS.md",
+    "Networking/2. Network Protocols and Standards/2.3 NetBEUI.md",
+    "Networking/2. Network Protocols and Standards/2.2 Routable & Non Routable Protocols.md",
+    "Networking/2. Network Protocols and Standards/2.1 Network Protocols.md",
+    "Networking/1.Basic Network Concepts/1.15 UNIX & Linux.md",
+    "Networking/1.Basic Network Concepts/1.14 Novel NetWare.md",
+    "DCAPT 2025/DCAPT (Practical).md",
+    "Networking/1.Basic Network Concepts/1.4 Types of Networks.md",
+    "Networking/1.Basic Network Concepts/1.6 Network Topologies.md",
+    "Networking/2. Network Protocols and Standards",
+    "Networking/1.Basic Network Concepts/1.5 Internet, Intranet, and Extranet.md",
+    "Networking/1.Basic Network Concepts/1.13 Windows Server.md",
+    "Networking/1.Basic Network Concepts/1.12 Network Operating System.md",
+    "SOC Analyst L1/Day 2 - SOC.md",
+    "DCAPT 2025/DCAPT (Theory).md",
     "Web Security - Rana Khalil/SQL Injection/SQL Injection Lab-3.md",
     "Web Security - Rana Khalil/SQL Injection/SQL Injection Lab-2.md",
     "Web Security - Rana Khalil/SQL Injection/SQL Injection Lab-1.md",
     "Web Security - Rana Khalil/SQL Injection/SQL Injection.md",
-    "DCAPT 2025/DCAPT (Theory).md",
-    "DCAPT 2025/DCAPT (Practical).md",
     "Networking/1.Basic Network Concepts/1.9 Network Architectures.md",
     "Networking/1.Basic Network Concepts/1.10 Token Ring.md",
     "Networking/1.Basic Network Concepts/1.11 FDDI.md",
-    "Networking/1.Basic Network Concepts/1.12 Network Operating System.md",
     "OverTheWire/Bandit/Bandit - OverTheWire.md",
     "Networking/1.Basic Network Concepts/1.7 Network Media and Connectors.md",
-    "Networking/1.Basic Network Concepts/1.8 Access Methods.md",
-    "Networking/1.Basic Network Concepts/1.6 Network Topologies.md",
-    "Networking/1.Basic Network Concepts/1.5 Internet, Intranet, and Extranet.md",
-    "Networking/1.Basic Network Concepts/1.4 Types of Networks.md",
-    "Networking/1.Basic Network Concepts/1.3 Wans, Lans, and Mans.md",
-    "Networking/1.Basic Network Concepts/1.2 Servers, Workstations, and Hosts.md",
-    "Networking/1.Basic Network Concepts/1.1 Identifying Characteristics of a network.md",
-    "Advanced Web Exploitation/Advance Recon/3. Port Scanning.md",
-    "Networking/1.Basic Network Concepts/1.12.md",
-    "Untitled.md",
     "Networking/1.Basic Network Concepts/1.1 Identifying Characteristics of a Network",
     "Networking/1.Basic Network Concepts",
     "Networking",
-    "Advanced Web Exploitation/Advance Recon/1. Basics.md",
-    "Advanced Web Exploitation/Advance Recon/4. Content Discovery.md",
-    "Kali Linux Capsule/Day 1 - Kali Linux.md",
-    "Advanced Web Exploitation/Advance Recon/2. Subdomain Enumeration.md",
     "Advanced Web Exploitation/Advance Recon",
     "Advanced Web Exploitation",
     "DCAPT 2025",
     "OverTheWire/Bandit",
     "OverTheWire",
-    "SOC Analyst L1",
-    "Kali Linux Capsule/Day 2"
+    "SOC Analyst L1"
   ]
 }
