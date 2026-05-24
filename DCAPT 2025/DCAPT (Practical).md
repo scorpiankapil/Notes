@@ -65,3 +65,73 @@ Used when connecting to old servers or devices that do not support modern SSH al
 ```
  medusa -h 192.168.1.10 -u root -P rockyou.txt -M ssh
 ```
+
+# John the Ripper
+
+- Password cracking and password auditing tool used in Kali Linux.
+- Works by taking a password hash and trying different password guesses.
+- Converts guessed passwords into hashes and compares them with the target hash.
+- If the generated hash matches the target hash, the password is cracked.
+- Supports multiple attack methods like dictionary attack, brute-force attack, and hybrid attack.
+- Supports many hash types such as MD5, SHA1, SHA256, NTLM, ZIP/RAR, and Linux shadow hashes.
+```
+sudo john -format=crypt --wordlist=pass.txt hash.txt
+```
+
+
+# Hashcat
+
+- Advanced password cracking and recovery tool used in Kali Linux.
+- Uses GPU acceleration, making it much faster than many traditional cracking tools.
+- Works by taking a password hash and generating password guesses to find the correct password.
+- Converts guessed passwords into hashes and compares them with the target hash.
+- Supports attack modes like dictionary attack, brute-force attack, mask attack, and hybrid attack.
+- Supports many hash types such as MD5, SHA1, SHA256, NTLM, WPA/WPA2, ZIP/RAR, and Linux hashes
+```
+hashcat -m 0 hash.txt rockyou.txt
+```
+
+# FFUF
+
+- Fast web fuzzing and directory discovery tool used in Kali Linux.
+- Used to find hidden directories, files, subdomains, parameters, and APIs.
+- Works by sending multiple requests with different payloads from a wordlist.
+- Replaces the keyword FUZZ in the URL or request with words from the wordlist.
+- Commonly used for web application reconnaissance and vulnerability testing.
+- Supports directory fuzzing, virtual host fuzzing, parameter fuzzing, and POST request fuzzing.
+- Very fast and lightweight compared to many other fuzzing tools.
+```
+ffuf -u http://target.com/FUZZ -w wordlist.txt
+```
+
+# Dirsearch
+
+- Web path and directory brute-forcing tool used in Kali Linux.
+- Used to discover hidden files, directories, admin panels, and backup files on websites.
+- Works by sending HTTP requests using words from a wordlist.
+- Compares server responses to identify valid paths and resources.
+- Commonly used in web reconnaissance and penetration testing.
+- Supports recursive scanning, extensions scanning, threads, proxies, and authentication.
+- Can detect files like `.php`, `.html`, `.bak`, `.zip`, and hidden admin pages.
+```
+dirsearch -u http://172.20.10.2/
+```
+
+# Telnet
+
+1. Used for remote communication between computers.
+2. Works on port 23 by default.
+3. Sends data in plain text (not secure).
+4. Mainly used for testing ports and old network devices.
+5. Does not provide encryption or secure authentication.
+6. Mostly replaced by SSH in modern systems.
+
+# SSH (Secure Shell)
+
+1. Used for secure remote login and administration.
+2. Works on port 22 by default.
+3. Encrypts all communication between client and server.
+4. Supports password and key-based authentication.
+5. Commonly used by system administrators and developers.
+6. Can securely transfer files using SCP/SFTP.
+
