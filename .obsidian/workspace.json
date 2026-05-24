@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "126caf011880d2f2",
+        "id": "2ecb4019b742ba8e",
         "type": "tabs",
         "children": [
           {
-            "id": "2e2067a4dfd2f442",
+            "id": "5f0c69a176001e42",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DCAPT 2025/DCAPT (Practical).md",
+                "file": "Networking/2. Network Protocols and Standards/2.8 The OSI Model.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "DCAPT (Practical)"
+              "title": "2.8 The OSI Model"
             }
           }
         ]
@@ -194,21 +194,25 @@
       "bases:Create new base": false
     }
   },
-  "active": "2e2067a4dfd2f442",
+  "active": "5f0c69a176001e42",
   "lastOpenFiles": [
-    "DCAPT 2025/DCAPT (Theory).md",
     "DCAPT 2025/DCAPT (Practical).md",
-    "Networking/2. Network Protocols and Standards/2.7 TCP-IP Protocol.md",
+    "DCAPT 2025/DCAPT (Theory).md",
     "Networking/2. Network Protocols and Standards/2.6 AppleTalk.md",
     "Networking/2. Network Protocols and Standards/2.5 IPX&SPX.md",
     "Networking/2. Network Protocols and Standards/2.4 NetBIOS.md",
-    "Networking/2. Network Protocols and Standards/2.3 NetBEUI.md",
-    "Networking/2. Network Protocols and Standards/2.2 Routable & Non Routable Protocols.md",
     "Networking/2. Network Protocols and Standards/2.1 Network Protocols.md",
+    "Networking/2. Network Protocols and Standards/2.8 The OSI Model.md",
+    "Networking/2. Network Protocols and Standards/2.9 Connectionless & Connection-Oriented Communication.md",
+    "Networking/1.Basic Network Concepts/1.6 Network Topologies.md",
+    "Networking/2. Network Protocols and Standards/2.7 TCP-IP Protocol.md",
+    "Networking/2. Network Protocols and Standards/2.2 Routable & Non Routable Protocols.md",
+    "Networking/1.Basic Network Concepts/1.2 Servers, Workstations, and Hosts.md",
+    "Networking/1.Basic Network Concepts/1.1 Identifying Characteristics of a network.md",
+    "Networking/2. Network Protocols and Standards/2.3 NetBEUI.md",
     "Networking/1.Basic Network Concepts/1.15 UNIX & Linux.md",
     "Networking/1.Basic Network Concepts/1.14 Novel NetWare.md",
     "Networking/1.Basic Network Concepts/1.4 Types of Networks.md",
-    "Networking/1.Basic Network Concepts/1.6 Network Topologies.md",
     "Networking/2. Network Protocols and Standards",
     "Networking/1.Basic Network Concepts/1.5 Internet, Intranet, and Extranet.md",
     "Networking/1.Basic Network Concepts/1.13 Windows Server.md",
@@ -219,10 +223,6 @@
     "Web Security - Rana Khalil/SQL Injection/SQL Injection Lab-1.md",
     "Web Security - Rana Khalil/SQL Injection/SQL Injection.md",
     "Networking/1.Basic Network Concepts/1.9 Network Architectures.md",
-    "Networking/1.Basic Network Concepts/1.10 Token Ring.md",
-    "Networking/1.Basic Network Concepts/1.11 FDDI.md",
-    "OverTheWire/Bandit/Bandit - OverTheWire.md",
-    "Networking/1.Basic Network Concepts/1.7 Network Media and Connectors.md",
     "Networking/1.Basic Network Concepts/1.1 Identifying Characteristics of a Network",
     "Networking/1.Basic Network Concepts",
     "Networking",
