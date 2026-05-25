@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "SOC Analyst L1/Day 3 - System Attack Vectors & Vulnerabilities.md",
+                "file": "DCAPT 2025/DCAPT (Practical).md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Day 3 - System Attack Vectors & Vulnerabilities"
+              "title": "DCAPT (Practical)"
             }
           }
         ]
@@ -78,8 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 285.5
   },
   "right": {
     "id": "b698854d9e69046c",
@@ -197,19 +196,26 @@
   },
   "active": "5f0c69a176001e42",
   "lastOpenFiles": [
+    "Networking/3. Networking Components/3.5 Bridges and Switches.md",
+    "Networking/3. Networking Components/3.4 Hubs, Maus, and Repeaters.md",
+    "Networking/3. Networking Components/3.3 MAC Address.md",
+    "Networking/3. Networking Components/3.1 Network Interface Cards.md",
+    "Networking/3. Networking Components/3.2 Transceivers.md",
+    "Networking/2. Network Protocols and Standards/2.4 NetBIOS.md",
+    "Networking/2. Network Protocols and Standards/2.5 IPX&SPX.md",
+    "Networking/2. Network Protocols and Standards/2.6 AppleTalk.md",
+    "Networking/2. Network Protocols and Standards/2.7 TCP-IP Protocol.md",
+    "Networking/2. Network Protocols and Standards/2.9 Connectionless & Connection-Oriented Communication.md",
+    "Networking/3. Networking Components",
+    "Networking/Untitled.md",
+    "SOC Analyst L1/Day 3 - System Attack Vectors & Vulnerabilities.md",
     "SOC Analyst L1/Day 2 - Human Attack Vectors, Process & Technology.md",
     "SOC Analyst L1/Day 1 - Introduction & Importance of SOC in Blue Team.md",
-    "SOC Analyst L1/Day 3 - System Attack Vectors & Vulnerabilities.md",
     "DCAPT 2025/DCAPT (Practical).md",
     "DCAPT 2025/DCAPT (Theory).md",
     "Networking/2. Network Protocols and Standards/2.8 The OSI Model.md",
-    "Networking/2. Network Protocols and Standards/2.6 AppleTalk.md",
-    "Networking/2. Network Protocols and Standards/2.5 IPX&SPX.md",
-    "Networking/2. Network Protocols and Standards/2.4 NetBIOS.md",
     "Networking/2. Network Protocols and Standards/2.1 Network Protocols.md",
-    "Networking/2. Network Protocols and Standards/2.9 Connectionless & Connection-Oriented Communication.md",
     "Networking/1.Basic Network Concepts/1.6 Network Topologies.md",
-    "Networking/2. Network Protocols and Standards/2.7 TCP-IP Protocol.md",
     "Networking/2. Network Protocols and Standards/2.2 Routable & Non Routable Protocols.md",
     "Networking/1.Basic Network Concepts/1.2 Servers, Workstations, and Hosts.md",
     "Networking/1.Basic Network Concepts/1.1 Identifying Characteristics of a network.md",
@@ -218,12 +224,6 @@
     "Networking/1.Basic Network Concepts/1.14 Novel NetWare.md",
     "Networking/1.Basic Network Concepts/1.4 Types of Networks.md",
     "Networking/2. Network Protocols and Standards",
-    "Networking/1.Basic Network Concepts/1.5 Internet, Intranet, and Extranet.md",
-    "Networking/1.Basic Network Concepts/1.13 Windows Server.md",
-    "Networking/1.Basic Network Concepts/1.12 Network Operating System.md",
-    "Web Security - Rana Khalil/SQL Injection/SQL Injection Lab-3.md",
-    "Web Security - Rana Khalil/SQL Injection/SQL Injection Lab-2.md",
-    "Web Security - Rana Khalil/SQL Injection/SQL Injection Lab-1.md",
     "Networking/1.Basic Network Concepts/1.1 Identifying Characteristics of a Network",
     "Networking/1.Basic Network Concepts",
     "Networking",
@@ -231,7 +231,6 @@
     "Advanced Web Exploitation",
     "DCAPT 2025",
     "OverTheWire/Bandit",
-    "OverTheWire",
-    "SOC Analyst L1"
+    "OverTheWire"
   ]
 }

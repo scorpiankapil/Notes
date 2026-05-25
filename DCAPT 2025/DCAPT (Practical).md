@@ -135,3 +135,39 @@ dirsearch -u http://172.20.10.2/
 5. Commonly used by system administrators and developers.
 6. Can securely transfer files using SCP/SFTP.
 
+# Crunch
+
+- Wordlist generation tool used in Kali Linux.
+- Creates custom password wordlists for brute-force and dictionary attacks.
+- Generates passwords based on user-defined patterns, characters, and lengths.
+- Useful for password cracking tools like John the Ripper and Hashcat.
+- Can generate numeric, alphabetic, symbolic, or mixed-character passwords.
+- Supports custom character sets and pattern-based wordlist creation.
+- Commonly used in penetration testing, cybersecurity labs, and CTF challenges.
+- Basic command:
+
+```
+crunch 4 6 abc123
+```
+
+
+# CeWL
+
+- Web-based custom wordlist generation tool used in Kali Linux.
+- Crawls a website and collects words to create targeted password wordlists.
+- Useful for password cracking and social engineering assessments.
+- Extracts words from webpages, metadata, emails, and documents.
+- Helps create highly targeted wordlists based on company or user-related content.
+- Commonly used with John the Ripper and Hashcat.
+- Supports depth control, minimum word length, and metadata extraction. 
+
+```
+cewl http://target.com
+```
+
+suppose you are playing CTF challenges, it will help to generate the wordlist based on any target
+
+```
+cewl http://172.20.10.2/ --proxy_host 172.20.10.2 --proxy_port 8180
+```
+
