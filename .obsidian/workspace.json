@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Networking/3. Networking Components/3.6 Routers and Brouters.md",
+                "file": "Networking/4. TCP-IP Fundamentals/4.2 TCP & IP Model.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "3.6 Routers and Brouters"
+              "title": "4.2 TCP & IP Model"
             }
           }
         ]
@@ -196,7 +196,17 @@
   },
   "active": "5f0c69a176001e42",
   "lastOpenFiles": [
+    "Networking/4. TCP-IP Fundamentals/4.1 TCP-IP Protocol Suite.md",
+    "Networking/4. TCP-IP Fundamentals/4.2 TCP & IP Model.md",
     "Networking/3. Networking Components/3.5 Bridges and Switches.md",
+    "Networking/3. Networking Components/3.12 ISDN (Integrated Services Digital Network).md",
+    "Networking/4. TCP-IP Fundamentals",
+    "Networking/3. Networking Components/3.12 CSU-DSU.md",
+    "Networking/3. Networking Components/3.11 Modems.md",
+    "Networking/3. Networking Components/3.10 Wireless Access Points (WAPs).md",
+    "Networking/3. Networking Components/3.9 Intrusion Detection System (IDS).md",
+    "Networking/3. Networking Components/3.8 Firewalls.md",
+    "Networking/3. Networking Components/3.7 Gateways.md",
     "Networking/3. Networking Components/3.6 Routers and Brouters.md",
     "Networking/3. Networking Components/3.4 Hubs, Maus, and Repeaters.md",
     "SOC Analyst L1/Day 4 - Alert Triage, TTPs & Threat IOCs.md",
@@ -214,15 +224,6 @@
     "Networking/Untitled.md",
     "SOC Analyst L1/Day 2 - Human Attack Vectors, Process & Technology.md",
     "SOC Analyst L1/Day 1 - Introduction & Importance of SOC in Blue Team.md",
-    "DCAPT 2025/DCAPT (Theory).md",
-    "Networking/2. Network Protocols and Standards/2.8 The OSI Model.md",
-    "Networking/2. Network Protocols and Standards/2.1 Network Protocols.md",
-    "Networking/1.Basic Network Concepts/1.6 Network Topologies.md",
-    "Networking/2. Network Protocols and Standards/2.2 Routable & Non Routable Protocols.md",
-    "Networking/1.Basic Network Concepts/1.2 Servers, Workstations, and Hosts.md",
-    "Networking/1.Basic Network Concepts/1.1 Identifying Characteristics of a network.md",
-    "Networking/2. Network Protocols and Standards/2.3 NetBEUI.md",
-    "Networking/1.Basic Network Concepts/1.15 UNIX & Linux.md",
     "Networking/2. Network Protocols and Standards",
     "Networking/1.Basic Network Concepts/1.1 Identifying Characteristics of a Network",
     "Networking/1.Basic Network Concepts",
@@ -230,7 +231,6 @@
     "Advanced Web Exploitation/Advance Recon",
     "Advanced Web Exploitation",
     "DCAPT 2025",
-    "OverTheWire/Bandit",
-    "OverTheWire"
+    "OverTheWire/Bandit"
   ]
 }
