@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Networking/4. TCP-IP Fundamentals/4.10 Unicast, Broadcast & Multicast.md",
+                "file": "Networking/4. TCP-IP Fundamentals/4.19 Network Services.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "4.10 Unicast, Broadcast & Multicast"
+              "title": "4.19 Network Services"
             }
           }
         ]
@@ -78,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 285.5
+    "width": 433.5
   },
   "right": {
     "id": "b698854d9e69046c",
@@ -196,33 +196,33 @@
   },
   "active": "5f0c69a176001e42",
   "lastOpenFiles": [
+    "Networking/4. TCP-IP Fundamentals/4.18 Windows Internet Naming Service (WINS).md",
+    "Networking/4. TCP-IP Fundamentals/4.19 Network Services.md",
+    "Networking/4. TCP-IP Fundamentals/4.17 DNS (Domain Name System).md",
+    "Networking/2. Network Protocols and Standards/2.4 NetBIOS.md",
+    "Networking/2. Network Protocols and Standards/2.3 NetBEUI.md",
+    "Networking/4. TCP-IP Fundamentals/4.16 Boot Protocol.md",
+    "Networking/4. TCP-IP Fundamentals/4.15 APIPA (Automatic Private IP Addressing).md",
+    "Networking/4. TCP-IP Fundamentals/4.14 Dynamic Host Configuration Protocol (DHCP).md",
     "Networking/4. TCP-IP Fundamentals/4.1 TCP-IP Protocol Suite.md",
-    "Networking/4. TCP-IP Fundamentals/4.2 TCP & IP Model.md",
+    "Networking/4. TCP-IP Fundamentals/Untitled 1.md",
+    "Networking/4. TCP-IP Fundamentals/4.13 TCP & IP Manual Configuration.md",
+    "Networking/4. TCP-IP Fundamentals/4.12 TCP & IP Ports.md",
+    "Networking/4. TCP-IP Fundamentals/4.10 Addressing Schemes - Unicast, Broadcast & Multicast.md",
+    "Networking/4. TCP-IP Fundamentals/4.11 IPv6.md",
     "Networking/4. TCP-IP Fundamentals/4.3 IP Address.md",
+    "Networking/3. Networking Components/3.11 Modems.md",
+    "Networking/3. Networking Components/3.12 CSU-DSU.md",
+    "Networking/4. TCP-IP Fundamentals/4.2 TCP & IP Model.md",
     "Networking/4. TCP-IP Fundamentals/4.4 Subnet Mask.md",
     "Networking/4. TCP-IP Fundamentals/4.5 Default Gateway.md",
     "Networking/4. TCP-IP Fundamentals/4.6 Binary Representation.md",
     "Networking/4. TCP-IP Fundamentals/4.7 Address Classes.md",
     "Networking/4. TCP-IP Fundamentals/4.8 Loopback Address.md",
     "Networking/4. TCP-IP Fundamentals/4.9 Private Address.md",
-    "Networking/4. TCP-IP Fundamentals/4.10 Unicast, Broadcast & Multicast.md",
     "SOC Analyst L1/Day 5 - Alert Reporting, Escalation & Cyber Kill Chain.md",
     "SOC Analyst L1/Day 4 - Alert Triage, TTPs & Threat IOCs.md",
-    "Networking/3. Networking Components/3.5 Bridges and Switches.md",
-    "Networking/3. Networking Components/3.12 ISDN (Integrated Services Digital Network).md",
     "Networking/4. TCP-IP Fundamentals",
-    "Networking/3. Networking Components/3.12 CSU-DSU.md",
-    "Networking/3. Networking Components/3.11 Modems.md",
-    "Networking/3. Networking Components/3.10 Wireless Access Points (WAPs).md",
-    "Networking/3. Networking Components/3.9 Intrusion Detection System (IDS).md",
-    "Networking/3. Networking Components/3.8 Firewalls.md",
-    "Networking/3. Networking Components/3.7 Gateways.md",
-    "Networking/3. Networking Components/3.6 Routers and Brouters.md",
-    "Networking/3. Networking Components/3.4 Hubs, Maus, and Repeaters.md",
-    "SOC Analyst L1/Day 3 - System Attack Vectors & Vulnerabilities.md",
-    "DCAPT 2025/DCAPT (Practical).md",
-    "Networking/3. Networking Components/3.3 MAC Address.md",
-    "Networking/3. Networking Components/3.1 Network Interface Cards.md",
     "Networking/3. Networking Components",
     "Networking/2. Network Protocols and Standards",
     "Networking/1.Basic Network Concepts/1.1 Identifying Characteristics of a Network",
