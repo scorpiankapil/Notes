@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Networking/5. Subnetting and Routing/5.4 Supernetting.md",
+                "file": "Networking/6. TCP & IP Utilities/6.1 ARP.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "5.4 Supernetting"
+              "title": "6.1 ARP"
             }
           }
         ]
@@ -196,12 +196,17 @@
   },
   "active": "5f0c69a176001e42",
   "lastOpenFiles": [
-    "Networking/5. Subnetting and Routing/5.3 CIDR (Classless Inter-Domain Routing).md",
+    "Networking/5. Subnetting and Routing/5.7 Dynamic Routing Protocol.md",
+    "Networking/6. TCP & IP Utilities/6.1 ARP.md",
+    "Networking/6. TCP & IP Utilities",
+    "DCAPT 2025/VAPT.md",
+    "Networking/5. Subnetting and Routing/5.5 Routing.md",
+    "Networking/5. Subnetting and Routing/5.6 Cisco Routers vs Windows Routers.md",
     "Networking/5. Subnetting and Routing/5.4 Supernetting.md",
+    "Networking/5. Subnetting and Routing/5.3 CIDR (Classless Inter-Domain Routing).md",
     "Networking/5. Subnetting and Routing/5.2 Classful vs. Classless addressing.md",
     "Networking/5. Subnetting and Routing/5.1 Understanding Subnetting.md",
     "Networking/4. TCP-IP Fundamentals/4.19 Network Services.md",
-    "Networking/Untitled",
     "Networking/5. Subnetting and Routing",
     "Networking/4. TCP-IP Fundamentals/4.18 Windows Internet Naming Service (WINS).md",
     "Networking/4. TCP-IP Fundamentals/4.17 DNS (Domain Name System).md",
@@ -219,11 +224,6 @@
     "Networking/4. TCP-IP Fundamentals/4.3 IP Address.md",
     "Networking/3. Networking Components/3.11 Modems.md",
     "Networking/3. Networking Components/3.12 CSU-DSU.md",
-    "Networking/4. TCP-IP Fundamentals/4.2 TCP & IP Model.md",
-    "Networking/4. TCP-IP Fundamentals/4.4 Subnet Mask.md",
-    "Networking/4. TCP-IP Fundamentals/4.5 Default Gateway.md",
-    "Networking/4. TCP-IP Fundamentals/4.6 Binary Representation.md",
-    "Networking/4. TCP-IP Fundamentals/4.7 Address Classes.md",
     "Networking/4. TCP-IP Fundamentals",
     "Networking/3. Networking Components",
     "Networking/2. Network Protocols and Standards",
