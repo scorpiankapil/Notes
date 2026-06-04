@@ -8,35 +8,20 @@
         "type": "tabs",
         "children": [
           {
-            "id": "5f0c69a176001e42",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Networking/4. TCP-IP Fundamentals/4.2 TCP & IP Model.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "4.2 TCP & IP Model"
-            }
-          },
-          {
             "id": "b7dadbb80a428399",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Networking/6. TCP & IP Utilities/6.4 TRACERT (Trace Route).md",
+                "file": "Networking/6. TCP & IP Utilities/6.10 TFTP (Trivial File Transfer Protocol).md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "6.4 TRACERT (Trace Route)"
+              "title": "6.10 TFTP (Trivial File Transfer Protocol)"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -211,11 +196,17 @@
   },
   "active": "b7dadbb80a428399",
   "lastOpenFiles": [
+    "Networking/6. TCP & IP Utilities/6.9 FTP (File Transfer Protocol).md",
+    "Networking/6. TCP & IP Utilities/6.10 TFTP (Trivial File Transfer Protocol).md",
+    "Networking/6. TCP & IP Utilities/6.8 IFCONFIG (Interface Configuration).md",
+    "Networking/4. TCP-IP Fundamentals/4.2 TCP & IP Model.md",
+    "Networking/6. TCP & IP Utilities/6.6 IPCONFIG (Internet Protocol Configuration).md",
+    "Networking/6. TCP & IP Utilities/6.7 WINIPCFG (Windows IP Configuration).md",
+    "Networking/6. TCP & IP Utilities/6.5 Netstat (Network Statistics).md",
+    "Networking/6. TCP & IP Utilities/6.1 ARP.md",
+    "Networking/6. TCP & IP Utilities/6.2 Telnet.md",
     "Networking/6. TCP & IP Utilities/6.3 NBTSTAT.md",
     "Networking/6. TCP & IP Utilities/6.4 TRACERT (Trace Route).md",
-    "Networking/6. TCP & IP Utilities/6.2 Telnet.md",
-    "Networking/6. TCP & IP Utilities/6.1 ARP.md",
-    "Networking/4. TCP-IP Fundamentals/4.2 TCP & IP Model.md",
     "Networking/5. Subnetting and Routing/5.7 Dynamic Routing Protocol.md",
     "Networking/6. TCP & IP Utilities",
     "DCAPT 2025/VAPT.md",
@@ -233,12 +224,6 @@
     "Networking/2. Network Protocols and Standards/2.3 NetBEUI.md",
     "Networking/4. TCP-IP Fundamentals/4.16 Boot Protocol.md",
     "Networking/4. TCP-IP Fundamentals/4.15 APIPA (Automatic Private IP Addressing).md",
-    "Networking/4. TCP-IP Fundamentals/4.14 Dynamic Host Configuration Protocol (DHCP).md",
-    "Networking/4. TCP-IP Fundamentals/4.1 TCP-IP Protocol Suite.md",
-    "Networking/4. TCP-IP Fundamentals/Untitled 1.md",
-    "Networking/4. TCP-IP Fundamentals/4.13 TCP & IP Manual Configuration.md",
-    "Networking/4. TCP-IP Fundamentals/4.12 TCP & IP Ports.md",
-    "Networking/4. TCP-IP Fundamentals/4.10 Addressing Schemes - Unicast, Broadcast & Multicast.md",
     "Networking/4. TCP-IP Fundamentals",
     "Networking/3. Networking Components",
     "Networking/2. Network Protocols and Standards",
