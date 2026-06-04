@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Networking/6. TCP & IP Utilities/6.10 TFTP (Trivial File Transfer Protocol).md",
+                "file": "Networking/6. TCP & IP Utilities/6.14 DIG (Domain Information Groper).md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "6.10 TFTP (Trivial File Transfer Protocol)"
+              "title": "6.14 DIG (Domain Information Groper)"
             }
           }
         ]
@@ -78,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 433.5
+    "width": 368.5
   },
   "right": {
     "id": "b698854d9e69046c",
@@ -196,8 +196,13 @@
   },
   "active": "b7dadbb80a428399",
   "lastOpenFiles": [
-    "Networking/6. TCP & IP Utilities/6.9 FTP (File Transfer Protocol).md",
+    "Networking/6. TCP & IP Utilities/6.11 PING (Packet Internet Groper).md",
+    "Networking/6. TCP & IP Utilities/6.4 TRACERT (Trace Route).md",
+    "Networking/6. TCP & IP Utilities/6.14 DIG (Domain Information Groper).md",
+    "Networking/6. TCP & IP Utilities/6.13 NSLOOKUP (Name Server Lookup).md",
+    "Networking/6. TCP & IP Utilities/6.12 HPING or HPING2.md",
     "Networking/6. TCP & IP Utilities/6.10 TFTP (Trivial File Transfer Protocol).md",
+    "Networking/6. TCP & IP Utilities/6.9 FTP (File Transfer Protocol).md",
     "Networking/6. TCP & IP Utilities/6.8 IFCONFIG (Interface Configuration).md",
     "Networking/4. TCP-IP Fundamentals/4.2 TCP & IP Model.md",
     "Networking/6. TCP & IP Utilities/6.6 IPCONFIG (Internet Protocol Configuration).md",
@@ -206,7 +211,6 @@
     "Networking/6. TCP & IP Utilities/6.1 ARP.md",
     "Networking/6. TCP & IP Utilities/6.2 Telnet.md",
     "Networking/6. TCP & IP Utilities/6.3 NBTSTAT.md",
-    "Networking/6. TCP & IP Utilities/6.4 TRACERT (Trace Route).md",
     "Networking/5. Subnetting and Routing/5.7 Dynamic Routing Protocol.md",
     "Networking/6. TCP & IP Utilities",
     "DCAPT 2025/VAPT.md",
@@ -220,10 +224,6 @@
     "Networking/5. Subnetting and Routing",
     "Networking/4. TCP-IP Fundamentals/4.18 Windows Internet Naming Service (WINS).md",
     "Networking/4. TCP-IP Fundamentals/4.17 DNS (Domain Name System).md",
-    "Networking/2. Network Protocols and Standards/2.4 NetBIOS.md",
-    "Networking/2. Network Protocols and Standards/2.3 NetBEUI.md",
-    "Networking/4. TCP-IP Fundamentals/4.16 Boot Protocol.md",
-    "Networking/4. TCP-IP Fundamentals/4.15 APIPA (Automatic Private IP Addressing).md",
     "Networking/4. TCP-IP Fundamentals",
     "Networking/3. Networking Components",
     "Networking/2. Network Protocols and Standards",
