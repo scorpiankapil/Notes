@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Advanced Web Exploitation/Advance Recon/5. Directory Fuzzing Basics.md",
+                "file": "SOC Analyst L1/Day 11 - Real World Interview Preparation.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "5. Directory Fuzzing Basics"
+              "title": "Day 11 - Real World Interview Preparation"
             }
           }
         ]
@@ -78,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 221.5
+    "width": 246.5
   },
   "right": {
     "id": "b698854d9e69046c",
@@ -196,41 +196,42 @@
   },
   "active": "256059a93f26ba57",
   "lastOpenFiles": [
-    "Untitled.canvas",
+    "SOC Analyst L1/Day 10 - Lateral Movement & Privilege Escalation.md",
+    "SOC Analyst L1/Day 11 - Real World Interview Preparation.md",
+    "SOC Analyst L1/Day 3 - System Attack Vectors & Vulnerabilities.md",
+    "SOC Analyst L1/Day 2 - Human Attack Vectors, Process & Technology.md",
+    "SOC Analyst L1/Day 8 - Password & Credential Stuffing Attack.md",
+    "SOC Analyst L1/DAY 9 - Hashing, Salting & Encryption.md",
+    "CPENT/3. OSINT (Open Source Intelligence).md",
+    "CPENT/2. Penetration Testing Scoping and Engagement.md",
+    "CPENT/1. Introduction to Penetration Testing & Methodologies.md",
+    "CPENT",
+    "OverTheWire/Bandit/Bandit - OverTheWire.md",
+    "Networking/3. Networking Components/3.5 Bridges and Switches.md",
+    "Networking/3. Networking Components/3.3 MAC Address.md",
+    "Networking/3. Networking Components/3.2 Transceivers.md",
+    "DCAPT 2025/Terms.md",
+    "DCAPT 2025/Pivoting.md",
+    "DCAPT 2025/Docker.md",
     "Advanced Web Exploitation/Advance Recon/5. Directory Fuzzing Basics.md",
-    "Advanced Web Exploitation/Advance Recon/1. Basics.md",
-    "Advanced Web Exploitation/Advance Recon/2. Subdomain Enumeration.md",
     "Advanced Web Exploitation/Advance Recon/3. Port Scanning.md",
-    "Advanced Web Exploitation/Advance Recon/4. Content Discovery.md",
-    "JAVA/2. Variables & Data Types.md",
-    "JAVA/1. Java.md",
+    "Advanced Web Exploitation/Advance Recon/2. Subdomain Enumeration.md",
+    "Advanced Web Exploitation/Advance Recon/1. Basics.md",
+    "SOC Analyst L1/Day 7 - Phishing & Social Engineering.md",
+    "SOC Analyst L1/Day 6 - Malware For SOC.md",
     "DCAPT 2025/Web Application Basics.md",
-    "Networking/2. Network Protocols and Standards/2.8 The OSI Model.md",
-    "Networking/2. Network Protocols and Standards/2.7 TCP-IP Protocol.md",
-    "Networking/2. Network Protocols and Standards/2.6 AppleTalk.md",
-    "Networking/2. Network Protocols and Standards/2.5 IPX&SPX.md",
-    "Networking/2. Network Protocols and Standards/2.4 NetBIOS.md",
-    "Networking/2. Network Protocols and Standards/2.3 NetBEUI.md",
-    "Networking/2. Network Protocols and Standards/2.2 Routable & Non Routable Protocols.md",
-    "Networking/2. Network Protocols and Standards/2.1 Network Protocols.md",
-    "Networking/1.Basic Network Concepts/1.15 UNIX & Linux.md",
-    "Networking/1.Basic Network Concepts/1.14 Novel NetWare.md",
-    "Networking/1.Basic Network Concepts/1.13 Windows Server.md",
-    "Networking/1.Basic Network Concepts/1.12 Network Operating System.md",
-    "Networking/1.Basic Network Concepts/1.11 FDDI.md",
-    "Networking/1.Basic Network Concepts/1.10 Token Ring.md",
-    "Networking/1.Basic Network Concepts/1.9 Network Architectures.md",
-    "Networking/7. Wireless Networking/7.3 Channels.md",
-    "Networking/1.Basic Network Concepts/1.8 Access Methods.md",
+    "Networking/8. Remote Connectivity/8.1 Remote Connectivity.md",
+    "Networking/7. Wireless Networking/7.6 Infrared and Bluetooth.md",
+    "Networking/8. Remote Connectivity",
+    "Networking/7. Wireless Networking/7.5 Securing Wireless Networks.md",
+    "Advanced Web Exploitation/Advanced SQL Injection",
+    "Untitled.canvas",
     "Networking/7. Wireless Networking",
     "JAVA",
     "Networking/6. TCP & IP Utilities",
     "Networking/5. Subnetting and Routing",
     "Networking/4. TCP-IP Fundamentals",
     "Networking/3. Networking Components",
-    "Networking/2. Network Protocols and Standards",
-    "Networking/1.Basic Network Concepts/1.1 Identifying Characteristics of a Network",
-    "Networking/1.Basic Network Concepts",
-    "Networking"
+    "Networking/2. Network Protocols and Standards"
   ]
 }

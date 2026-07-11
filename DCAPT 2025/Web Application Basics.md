@@ -861,3 +861,57 @@ X-XSS-Protection: 1; report=https://example.com/report
 Enables the browser's built-in XSS filter and instructs the browser to send a report to the specified URL if an XSS attack is detected.
 
 This directive was not widely supported by browsers and is now deprecated, just like the `X-XSS-Protection` header itself.
+
+## Strict-Transport-Security (HSTS)
+
+**Strict-Transport-Security (HSTS)** is an HTTP security response header that instructs a browser to **always communicate with a website using HTTPS instead of HTTP** for a specified period of time.
+
+The purpose of HSTS is to **force secure (HTTPS) connections** and protect users from attacks such as **SSL Stripping**, **protocol downgrade attacks**, and **man-in-the-middle (MITM) attacks, cookie hijacking over insecure HTTP connections**.
+
+```
+Strict-Transport-Security: max-age=31536000
+```
+
+```
+31536000 seconds
+= 365 days
+= 1 year
+```
+
+The **`max-age`** directive specifies the amount of time (in seconds) that the browser should remember to use **HTTPS only** when communicating with the website.
+
+```
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+```
+
+```
+example.com
+www.example.com
+api.example.com
+mail.example.com
+blog.example.com
+```
+
+The **`includeSubDomains`** directive applies the HSTS policy to the main domain **and all of its subdomains**.
+
+```
+Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+```
+
+The **`preload`** directive requests that the domain be added to the browser's **HSTS Preload List**, which is built into browsers.
+
+##### Benefits of HSTS
+
+- Forces browsers to always use **HTTPS** instead of **HTTP**.
+- Prevents **SSL Stripping attacks**.
+- Prevents **protocol downgrade attacks**.
+- Protects **usernames and passwords** during transmission.
+- Protects **session cookies** from theft.
+- Helps prevent **Man-in-the-Middle (MITM) attacks**.
+- Automatically redirects users from **HTTP to HTTPS** after the first secure visit.
+- Secures **all subdomains** when `includeSubDomains` is used.
+- Provides **first-visit HTTPS protection** when `preload` is enabled.
+- Ensures **encrypted communication** between the browser and the server.
+- Reduces the risk of **data interception and tampering**.
+
+# Cache-Control 

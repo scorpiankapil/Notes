@@ -30,8 +30,5 @@
     "lucideIconPackType": "native",
     "debugMode": false,
     "useInternalPlugins": false
-  },
-  "Advanced Web Exploitation/Advance Recon/1. Basics.md": "LiNotebook",
-  "Advanced Web Exploitation": "LiFolder",
-  "Advanced Web Exploitation/Advance Recon": "LiFolder"
+  }
 }
