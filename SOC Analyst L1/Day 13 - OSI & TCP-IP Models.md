@@ -637,4 +637,59 @@ Presentation (Removes Header)
 Application (Original Data Received)
 ```
 
-This structured approach ensures data integrity and reliability, even over complex network
+This structured approach ensures data integrity and reliability, even over complex network.
+
+---
+
+# TCP/IP Model
+
+The **TCP/IP Model** is a **4-layer networking model** that defines how data is transmitted between devices over a network or the Internet.
+
+It provides a set of rules (protocols) that allow computers to communicate with each other reliably.
+
+- To enable communication between different devices.
+- To organize the data transmission process into layers.
+- To ensure reliable and efficient data transfer over networks.
+- It is the **practical model used on the Internet**, unlike the OSI model, which is mainly a reference model.
+- Serves as the core framework of the modern Internet and networking systems.
+
+## Layers of the TCP/IP Model
+
+|Layer|Main Function|Example Protocols|
+|---|---|---|
+|**Application Layer**|Provides network services to user applications|HTTP, HTTPS, FTP, SMTP, DNS|
+|**Transport Layer**|Ensures reliable communication and data delivery|TCP, UDP|
+|**Internet Layer**|Handles logical addressing and routing|IP, ICMP, ARP|
+|**Network Access Layer** (Link Layer)|Transmits data over the physical network|Ethernet, Wi-Fi, PPP|
+
+## How the TCP/IP Model Works
+
+1. The user sends data from an application (e.g., a web browser).
+2. The **Application Layer** prepares the data for transmission.
+3. The **Transport Layer** divides the data into segments and uses **TCP** or **UDP** for communication.
+4. The **Internet Layer** adds the source and destination IP addresses and decides the best route.
+5. The **Network Access Layer** converts the data into frames and transmits it as bits over the network.
+6. The receiving device receives the data and processes it in the reverse order until it reaches the application.
+
+# Difference Between OSI Model and TCP/IP Model
+
+|**OSI Model**|**TCP/IP Model**|
+|---|---|
+|Developed by **ISO (International Organization for Standardization)**.|Developed by **DARPA (U.S. Department of Defense)**.|
+|Has **7 layers**.|Has **4 layers**.|
+|It is a **reference (theoretical) model** used to understand networking concepts.|It is a **practical model** used for communication on the Internet.|
+|Layers are **Application, Presentation, Session, Transport, Network, Data Link, and Physical**.|Layers are **Application, Transport, Internet, and Network Access**.|
+|Presentation and Session are **separate layers**.|Presentation and Session functions are included in the **Application Layer**.|
+|Data Link and Physical are **separate layers**.|Data Link and Physical are combined into the **Network Access Layer**.|
+|Clearly separates **services, interfaces, and protocols**.|Focuses mainly on **protocols** and practical communication.|
+|More complex because it has more layers.|Simpler because it has fewer layers.|
+|Mainly used for **learning, designing, and understanding** networks.|Used for **real-world Internet communication**.|
+|Examples: Used in textbooks and networking education.|Examples: Used by protocols like **TCP, IP, HTTP, HTTPS, FTP, DNS**.|
+## SOC Example (TCP/IP Mapping)
+
+**Alert:** _Suspicious login via HTTPS from unknown IP_
+
+- **Application Layer** → HTTPS login activity (user login request).
+- **Transport Layer** → TCP **Port 443** (HTTPS communication).
+- **Network Layer** → Source **IP address** (check if it's suspicious or unknown).
+- **Data Link Layer** → Internal **MAC address/LAN device** (identify the affected host).
