@@ -110,9 +110,9 @@ Cookie: sessionId=abc123
 
 To maintain user state, sessions, preferences, and authentication across multiple HTTP requests.
 
-Cookies are automatically sent by the browser with every matching request to the website that set them, provided the cookie has not expired and its domain, path, Secure, and SameSite restrictions allow it to be included.
+Cookies are automatically sent by the browser with every matching request to the website that set them, provided the cookie has not expired and its domain, path, Secure, and Same Site restrictions allow it to be included.
 
-##### Why Cookies Exist (Simple Points)
+##### Why Cookies Exist
 
 - HTTP is **stateless**, meaning the server does not remember previous requests.
 - Cookies help the server **identify and remember users** between requests.
@@ -367,6 +367,8 @@ Only approved people can enter.
 
 **`X-Content-Type-Options`** is an HTTP security response header that prevents browsers from performing **MIME type sniffing** and forces them to strictly follow the `Content-Type` header specified by the server.
 
+`MIME type sniffing is when a browser tries to guess the actual type of a file/content instead of strictly trusting the Content-Type header sent by the server.`
+
 ```
 X-Content-Type-Options: nosniff
 ```
@@ -434,6 +436,7 @@ To prevent sensitive information from being leaked through the `Referer` header 
 
 The **Same-Origin Policy (SOP)** is a **browser security mechanism** that restricts how documents or scripts loaded from one **origin** can interact with resources from another origin. An **origin** is defined by the combination of **protocol (scheme)**, **host (domain)**, and **port**.
 
+- One website should not be able to read sensitive data from another website just because the user is logged into both.
 ## Origin
 
 An **origin** consists of:
@@ -608,7 +611,7 @@ Request Allowed
 
 **Cross-Origin-Embedder-Policy (COEP)** is a browser security policy that controls which resources (images, scripts, videos, iframes, etc.) from other websites can be loaded into your webpage.
 
-Blocks loading of cross-origin resources unless explicitly allowed, enhancing security from  embedded resources.
+Blocks loading of cross-origin resources unless explicitly allowed, enhancing security from embedded resources.
 - Does nothing unless enabled by the website
 
 ```
@@ -915,3 +918,524 @@ The **`preload`** directive requests that the domain be added to the browser's *
 - Reduces the risk of **data interception and tampering**.
 
 # Cache-Control 
+
+Cache-Control is an HTTP header used to specify directives for caching in both requests and responses. **It controls how, where, and for how long resources are cached by browsers, proxies, and servers.**
+
+**Cache-Control: public -** The response can be stored by **any cache**, including the browser and shared caches such as proxies or CDNs.
+
+```
+Cache-Control: public
+```
+
+
+**Cache-Control: private -** The response is intended for **one specific user** and should not be stored by shared caches. It can be stored in the user's browser.
+
+```
+Cache-Control: private
+```
+
+
+**Cache-Control: no-store -** The response must **not be stored in any cache**, including the browser or intermediate caches.
+
+```
+Cache-Control: no-store
+```
+
+
+**Cache-Control: no-cache -** The response **can be stored**, but the cache must **check with the server before reusing it**.
+
+```
+Cache-Control: no-cache
+```
+
+`public     → Anyone's cache can store it`
+`private    → Only user's private cache can store it`
+`no-store   → Don't store it at all`
+`no-cache   → Store it, but revalidate before reuse`
+
+
+**Cache-Control: max-age=3600 -** Specifies how long a cached resource is considered fresh, in seconds. After this period, the cache must revalidate the resource.
+
+```
+Cache-Control: max-age=3600
+```
+
+
+**Cache-Control: s-maxage=86400 -** Specifies how long a response can be considered fresh **in shared caches** such as CDNs and proxies.
+- Shared caches can use this response for 24 hours before revalidating it.
+- `s-maxage` applies to **shared caches**, not a user's private browser cache.
+
+```
+Cache-Control: s-maxage=86400
+```
+
+
+**Cache-Control: must-revalidate -** Requires a cache to revalidate the response with the origin server once the cached response becomes stale (expires).
+
+```
+Cache-Control: proxy-revalidate
+```
+
+
+**Cache-Control: immutable -** Tells the cache that the resource is **not expected to change** during its freshness lifetime.
+
+```
+Cache-Control: immutable
+```
+
+
+|Directive|Simple Meaning|
+|---|---|
+|`max-age=3600`|Cache for 1 hour|
+|`s-maxage=86400`|Shared caches can cache for 24 hours|
+|`must-revalidate`|Recheck after becoming stale|
+|`proxy-revalidate`|Shared caches must recheck after becoming stale|
+|`immutable`|Resource is not expected to change while fresh|
+
+
+**Cache-Control: stale-while-revalidate=60 -** Use the old cached data immediately while checking for a new version in the background for 60 seconds.
+
+```
+Cache-Control: stale-while-revalidate=60
+```
+
+
+**Cache-Control: stale-if-error=3600 -** If the server is down or gives an error, use the old cached data for up to 1 hour.
+
+```
+Cache-Control: stale-if-error=3600
+```
+
+
+**Cache-Control: only-if-cached -**  Forced the client to use the cached data only; don't contact or revalidate the server.
+
+```
+Cache-Control: only-if-cached
+```
+
+
+**Cache-Control: min-fresh=300 -** Use the cached data only if it will remain fresh for at least the specific time or 5 more minutes.
+
+```
+Cache-Control: min-fresh=300
+```
+
+
+**Cache-Control: post-check=0, pre-check=0 -** 
+
+- **post-check=0:** Instruct the browser not to check for updated content **after** serving the cache content. A value of 0 means "do not perform this check".
+
+- **pre-check=0:** Tells the browser not to check for updated content **before** serving the cached content. A value of 0 means "do not perform this check".
+
+```
+Cache-Control: post-check=0, pre-check=0
+```
+
+
+**Expires -** tells the browser the exact date and time when a cached response should be considered expired.
+
+```
+Expires: Tue, 03 Jul 2001 06:00:00 GMT
+```
+
+
+**Last-Modified: {now} GMT -** tells the browser when the resource was last changed on the server.
+
+```
+Last-Modified: {now} GMT
+Last-Modified: Wed, 21 Aug 2026 10:00:00 GMT
+```
+
+
+**Cache-Control: Pragma: no-cache -**  is an older HTTP header (HTTP/1.0) that tells caches **not to use a cached response without checking with the server first**.
+
+Don't use the cached copy directly; check with the server for a fresh version.
+
+`Check Server`
+     `↓`
+`Is the content updated?`
+     `↓`
+`Get fresh/validated response`
+
+```
+Pragma: no-cache
+```
+
+## What is CORS (Cross-Origin Resource Sharing)?
+
+CORS is a browser security mechanism that allows a website to access resources from another origin when the server allows it.
+
+It provides a controlled way to make **cross-origin requests** while working with the browser's **Same-Origin Policy (SOP)**.
+
+### How CORS Works
+
+Suppose you are on:
+
+```
+https://mywebsite.com
+```
+
+and your website wants data from:
+
+```
+https://api.example.com
+```
+
+These are different origins.
+
+#### Step 1 — Browser Sends Request
+
+The browser adds an `Origin` header:
+
+```
+Origin: https://mywebsite.com
+```
+
+This tells the API server:
+
+> "This request is coming from mywebsite.com."
+
+#### Step 2 — Server Checks the Origin
+
+The server decides whether `mywebsite.com` is allowed to access its resource.
+
+If allowed, the server responds with:
+
+```
+Access-Control-Allow-Origin: https://mywebsite.com
+```
+
+This means:
+
+> "I allow mywebsite.com to access this resource."
+
+#### Step 3 — Browser Allows Access
+
+The browser sees that the requested origin matches the allowed origin:
+
+```
+Origin:
+https://mywebsite.com
+
+Allowed:
+https://mywebsite.com
+```
+
+- JavaScript can access the response.
+
+If the server doesn't allow the origin:
+
+```
+https://mywebsite.com
+        ↓
+Not allowed
+        ↓
+Browser blocks JavaScript from reading the response
+```
+
+## CORS headers
+
+### 1. Access-Control-Allow-Headers
+
+```
+Access-Control-Allow-Headers: Content-Type, Authorization
+```
+
+**Specifies which HTTP request headers the browser is allowed to send in a cross-origin request.**
+
+Example:
+
+```
+Content-Type  → Allowed
+Authorization → Allowed
+```
+
+So the request can include:
+
+```
+Content-Type: application/json
+Authorization: Bearer token123
+```
+
+### 2. Access-Control-Allow-Credentials
+
+```
+Access-Control-Allow-Credentials: true
+```
+
+**Tells the browser that credentials such as cookies or HTTP authentication can be included in the cross-origin request.**
+
+For example:
+
+```
+Browser
+   ↓
+Request + Session Cookie
+   ↓
+API Server
+```
+
+**Simple:**
+
+Allows cross-origin requests to include credentials such as cookies.
+
+### 3. Access-Control-Max-Age
+
+```
+Access-Control-Max-Age: 86400
+```
+
+**Specifies how long the browser can remember the result of a CORS preflight request.**
+
+```
+86400 seconds = 24 hours
+```
+
+So the browser can remember the preflight permission for **24 hours** instead of sending another preflight request every time.
+
+|Header|Simple Meaning|
+|---|---|
+|`Origin`|Tells the server where the request came from.|
+|`Access-Control-Allow-Origin`|Tells which origin is allowed.|
+|`Access-Control-Allow-Methods`|Tells which HTTP methods are allowed.|
+|`Access-Control-Allow-Headers`|Tells which request headers are allowed.|
+|`Access-Control-Allow-Credentials`|Allows credentials such as cookies in cross-origin requests.|
+|`Access-Control-Max-Age`|Tells how long the preflight result can be cached.|
+# Set-Cookie
+
+`Set-Cookie` is an HTTP response header used by a server to send a cookie to the browser.
+
+```
+Set-Cookie: sessionId=abc123
+```
+
+- sessionId = Cookie name
+- abc123    = Cookie value
+
+### 1. Expires
+
+```
+Set-Cookie: sessionId=abc123; Expires=Wed, 21 Oct 2025 07:28:00 GMT
+```
+
+> **Specifies the exact date and time when the cookie will expire.**
+
+After that time, the cookie is no longer valid.
+
+### 2. Max-Age
+
+```
+Set-Cookie: sessionId=abc123; Max-Age=3600
+```
+
+> **Specifies how long the cookie should remain valid, in seconds.**
+
+```
+3600 seconds = 1 hour
+```
+
+After 1 hour, the cookie expires.
+
+**Important:** If both `Max-Age` and `Expires` are present, `Max-Age` takes precedence.
+
+### 3. Domain
+
+```
+Set-Cookie: sessionId=abc123; Domain=example.com
+```
+
+> **Specifies which domain can receive the cookie.**
+
+For example, it can allow the cookie to be sent to:
+
+```
+example.com
+www.example.com
+api.example.com
+```
+
+### 4. Path
+
+```
+Set-Cookie: sessionId=abc123; Path=/secure
+```
+
+> **Specifies which URL path the cookie should be sent to.**
+
+For example:
+
+```
+/secure
+/secure/profile
+/secure/settings
+```
+
+The cookie is sent for matching paths.
+
+### 5. Secure
+
+```
+Set-Cookie: sessionId=abc123; Secure
+```
+
+> **Tells the browser to send the cookie only over HTTPS connections.**
+
+This helps protect the cookie from being transmitted over insecure HTTP.
+
+### 6. HttpOnly
+
+```
+Set-Cookie: sessionId=abc123; HttpOnly
+```
+
+> **Prevents JavaScript from directly accessing the cookie.**
+
+For example:
+
+```
+document.cookie
+```
+
+cannot access an `HttpOnly` cookie.
+
+**Security benefit:** Helps reduce the impact of cookie theft through XSS.
+
+### 7. SameSite
+
+```
+Set-Cookie: sessionId=abc123; SameSite=Strict
+```
+
+> **Controls whether the cookie is sent when requests come from another site.**
+
+It has three main values:
+
+### Strict
+
+```
+SameSite=Strict
+```
+
+> Cookie is sent only in **same-site** requests.
+
+Provides strong protection against CSRF, but can affect some cross-site navigation/login flows.
+
+### Lax
+
+```
+SameSite=Lax
+```
+
+> Cookie is normally sent for same-site requests and allowed in some cross-site navigations, such as certain top-level `GET` requests.
+
+This is the common default behavior in modern browsers.
+
+### None
+
+```
+SameSite=None; Secure
+```
+
+> Cookie can be sent with cross-site requests.
+
+`Secure` is required when using `SameSite=None`.
+
+### Example
+
+```
+Set-Cookie: sessionId=abc123; 
+Expires=Wed, 21 Oct 2025 07:28:00 GMT; 
+Max-Age=3600; 
+Domain=example.com; 
+Path=/; 
+Secure; 
+HttpOnly; 
+SameSite=Strict
+```
+
+|Attribute|Simple Meaning|
+|---|---|
+|`Expires`|Exact date/time when cookie expires|
+|`Max-Age`|How many seconds the cookie remains valid|
+|`Domain`|Which domain can receive the cookie|
+|`Path`|Which URL paths can receive the cookie|
+|`Secure`|Send cookie only over HTTPS|
+|`HttpOnly`|JavaScript cannot access the cookie|
+|`SameSite=Strict`|Cookie only sent in same-site contexts|
+|`SameSite=Lax`|Allows same-site and some cross-site navigation|
+|`SameSite=None`|Allows cross-site requests; requires `Secure`|
+
+---
+
+# Content-Type Header
+
+`Content-Type` is an HTTP header that tells the **browser or server what type of data is present in the HTTP message body**, so it knows how to interpret the data.
+
+```
+Content-Type: text/html
+```
+
+- The body contains HTML content.
+
+### 1. Text Media Types
+
+|Value|Simple Definition|Example Use Case|
+|---|---|---|
+|`text/plain`|Plain text without formatting|Sending simple messages or logs|
+|`text/html`|HTML content used to create webpages|Sending webpage content|
+|`text/css`|CSS styling information|Providing styles for a webpage|
+|`text/javascript`|JavaScript code|Sending JavaScript files|
+|`text/csv`|Comma-separated values|Sending data for spreadsheets|
+
+### 2. Application Media Types
+
+|Value|Simple Definition|Example Use Case|
+|---|---|---|
+|`application/json`|Data written in JSON format|Sending API responses or structured data|
+|`application/xml`|Data written in XML format|Exchanging data between systems|
+|`application/pdf`|PDF document|Viewing or downloading PDF files|
+|`application/zip`|ZIP-compressed files|Downloading compressed files|
+|`application/x-www-form-urlencoded`|Form data sent as key-value pairs|HTML form submissions using POST|
+|`application/octet-stream`|General binary data when the specific type is unknown|File uploads or downloads|
+
+### 3. Image Media Types
+
+| Value           | Simple Definition | Example Use Case                     |
+| --------------- | ----------------- | ------------------------------------ |
+| `image/jpeg`    | JPEG image        | Uploading or displaying photos       |
+| `image/png`     | PNG image         | Sending images with transparency     |
+| `image/gif`     | GIF image         | Displaying animated or static GIFs   |
+| `image/svg+xml` | SVG vector image  | Sending vector graphics for webpages |
+### 4. Video Media Types
+
+|Value|Simple Definition|Example Use Case|
+|---|---|---|
+|`video/mp4`|MP4 video|Streaming or downloading videos|
+|`video/webm`|WebM video|Playing videos on webpages|
+
+### 5. Audio Media Types
+
+|Value|Simple Definition|Example Use Case|
+|---|---|---|
+|`audio/mpeg`|MP3/audio data|Streaming or downloading music|
+|`audio/ogg`|Ogg Vorbis audio|Providing Ogg audio files|
+
+### 6. Multipart Media Types
+
+|Value|Simple Definition|Example Use Case|
+|---|---|---|
+|`multipart/form-data`|Sends multiple types of form data, such as text and files, together|Uploading files through a web form|
+|`multipart/related`|Sends related resources together as one message|Email with embedded images|
+|`multipart/mixed`|Sends multiple parts of different types together|Email with attachments|
+
+### 7. Other Common Media Types
+
+|Value|Simple Definition|Example Use Case|
+|---|---|---|
+|`application/vnd.ms-excel`|Microsoft Excel file|Sending or sharing older Excel `.xls` files|
+|`application/vnd.ms-powerpoint`|Microsoft PowerPoint file|Sending or sharing older PowerPoint `.ppt` files|
+|`application/vnd.openxmlformats-officedocument.spreadsheetml.sheet`|Microsoft Excel XLSX file|Sending modern Excel `.xlsx` files|
+|`application/vnd.openxmlformats-officedocument.wordprocessingml.document`|Microsoft Word DOCX file|Sending modern Word `.docx` files|
+
+# HTTP Status Codes
+

@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "806c97a0452f6885",
+        "id": "b94b6d33479cdc05",
         "type": "tabs",
         "children": [
           {
-            "id": "256059a93f26ba57",
+            "id": "c6dc697336928482",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "SOC Analyst L1/Day 15 - IP, Subnet & MAC Addresses.md",
+                "file": "Networking/1.Basic Network Concepts/1.8 Access Methods.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Day 15 - IP, Subnet & MAC Addresses"
+              "title": "1.8 Access Methods"
             }
           }
         ]
@@ -41,7 +41,9 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical",
-                "autoReveal": false
+                "autoReveal": false,
+                "showSearch": false,
+                "searchQuery": ""
               },
               "icon": "lucide-folder-closed",
               "title": "Files"
@@ -53,7 +55,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "dns poisoning",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -194,34 +196,35 @@
       "bases:Create new base": false
     }
   },
-  "active": "256059a93f26ba57",
+  "active": "c6dc697336928482",
   "lastOpenFiles": [
-    "Networking/4. TCP-IP Fundamentals/4.3 IP Address.md",
-    "SOC Analyst L1/Day 15 - IP, Subnet & MAC Addresses.md",
-    "SOC Analyst L1/Day 14 - DNS, Ports & Protocols.md",
-    "Networking/4. TCP-IP Fundamentals/4.17 DNS (Domain Name System).md",
-    "SOC Analyst L1/Day 13 - OSI & TCP-IP Models.md",
-    "SOC Analyst L1/Day 20 - Windows Architecture & Registry.md",
-    "Networking/4. TCP-IP Fundamentals/4.2 TCP & IP Model.md",
-    "Networking/2. Network Protocols and Standards/2.8 The OSI Model.md",
-    "Networking/2. Network Protocols and Standards/2.7 TCP-IP Protocol.md",
-    "SOC Analyst L1/Day 12 - MITM & DDOS.md",
-    "CPENT/2. Penetration Testing Scoping and Engagement.md",
-    "Advanced Web Exploitation/Advance Recon/6. Header & Parameter Fuzzing.md",
-    "Advanced Web Exploitation/Advanced SQL Injection/1. SQL Injection.md",
-    "Advanced Web Exploitation/Advance Recon/5. Directory Fuzzing Basics.md",
-    "Advanced Web Exploitation/Advance Recon/4. Content Discovery.md",
-    "Advanced Web Exploitation/Advance Recon/3. Port Scanning.md",
-    "Advanced Web Exploitation/Advance Recon/2. Subdomain Enumeration.md",
-    "Advanced Web Exploitation/Advance Recon/1. Basics.md",
-    "DCAPT 2025/VAPT.md",
-    "DCAPT 2025/Docker.md",
-    "Networking/3. Networking Components/3.2 Transceivers.md",
-    "Networking/7. Wireless Networking/7.2 IEEE 802.11 Standards.md",
-    "Networking/7. Wireless Networking/7.3 Channels.md",
+    "Networking/1.Basic Network Concepts/1.7 Network Media and Connectors.md",
+    "Networking/1.Basic Network Concepts/1.8 Access Methods.md",
+    "Networking/1.Basic Network Concepts/1.6 Network Topologies.md",
+    "Networking/1.Basic Network Concepts/1.5 Internet, Intranet, and Extranet.md",
+    "Networking/1.Basic Network Concepts/1.4 Types of Networks.md",
+    "Networking/1.Basic Network Concepts/1.3 Wans, Lans, and Mans.md",
+    "Networking/1.Basic Network Concepts/1.2 Servers, Workstations, and Hosts.md",
+    "Networking/1.Basic Network Concepts/1.1 Identifying Characteristics of a network.md",
+    "Kali Linux Capsule/Day 1 - Kali Linux.md",
     "DCAPT 2025/Web Application Basics.md",
-    "SOC Analyst L1/Day 7 - Phishing & Social Engineering.md",
-    "SOC Analyst L1/Day 8 - Password & Credential Stuffing Attack.md",
+    "SOC Analyst L1/Day 27 - Introduction To SIEM.md",
+    "SOC Analyst L1/Day 26 - Endpoint Detection & Response (EDR).md",
+    "SOC Analyst L1/Day 24 - Linux Crontab & Commands.md",
+    "SOC Analyst L1/Day 25 - Workbooks & Metrics.md",
+    "Networking/8. Remote Connectivity/8.1 Remote Connectivity.md",
+    "Networking/7. Wireless Networking/7.6 Infrared and Bluetooth.md",
+    "Networking/7. Wireless Networking/7.5 Securing Wireless Networks.md",
+    "Networking/7. Wireless Networking/7.4 Authentication & Encryption.md",
+    "Networking/7. Wireless Networking/7.3 Channels.md",
+    "Networking/6. TCP & IP Utilities/6.13 NSLOOKUP (Name Server Lookup).md",
+    "Networking/6. TCP & IP Utilities/6.14 DIG (Domain Information Groper).md",
+    "Networking/6. TCP & IP Utilities/6.8 IFCONFIG (Interface Configuration).md",
+    "Networking/6. TCP & IP Utilities/6.9 FTP (File Transfer Protocol).md",
+    "Networking/6. TCP & IP Utilities/6.10 TFTP (Trivial File Transfer Protocol).md",
+    "Networking/6. TCP & IP Utilities/6.11 PING (Packet Internet Groper).md",
+    "Networking/3. Networking Components/3.10 Wireless Access Points (WAPs).md",
+    "Untitled.base",
     "CPENT",
     "Networking/8. Remote Connectivity",
     "Advanced Web Exploitation/Advanced SQL Injection",
@@ -231,7 +234,6 @@
     "Networking/6. TCP & IP Utilities",
     "Networking/5. Subnetting and Routing",
     "Networking/4. TCP-IP Fundamentals",
-    "Networking/3. Networking Components",
-    "Networking/2. Network Protocols and Standards"
+    "Networking/3. Networking Components"
   ]
 }

@@ -8,7 +8,7 @@ It is the the root directory in Linux and all folders starts from / here.
 It stores the binary files of basic commands that Linux needs to work like ls, cp, mv, rm etc.
 
 ### /boot 
-It contains files that are needed to start (boot) the Linux system, it also contains the bootloader files (like GRUB) and Linux kernal is stored in this directory.
+It contains files that are needed to start (boot) the Linux system, it also contains the bootloader files (like GRUB) and Linux kernel is stored in this directory.
 Without /boot, linux cannot start.
 - `vmlinuz` → Linux kernel file
 - `initrd` / `initramfs` → temporary file system used during boot
